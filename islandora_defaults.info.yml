@@ -1,0 +1,30 @@
+name: 'Islandora Defaults'
+description: 'Default configuration for Islandora 8.'
+type: module
+core: 8.x
+core_version_requirement: ^8 || ^9
+dependencies:
+  - content_translation
+  - controlled_access_terms
+  - controlled_access_terms_defaults
+  - field
+  - field_group
+  - field_permissions
+  - file
+  - image
+  - language
+  - link
+  - media
+  - menu_ui
+  - media_library
+  - node
+  - path
+  - rdf
+  - rest
+  - serialization
+  - system
+  - taxonomy
+  - text
+  - user
+  - views
+package: Islandora
