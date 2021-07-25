@@ -1,4 +1,3 @@
-uuid: 7a99809d-a2f0-472c-92d5-e534f4efb284
 langcode: en
 status: true
 dependencies:
@@ -19,11 +18,10 @@ settings:
   handler: 'default:node'
   handler_settings:
     target_bundles:
-      repository_item: repository_item
+      islandora_object: islandora_object
     sort:
       field: _none
       direction: ASC
     auto_create: false
     auto_create_bundle: islandora_object
 field_type: entity_reference
-
