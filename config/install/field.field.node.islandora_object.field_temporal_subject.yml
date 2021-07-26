@@ -19,7 +19,7 @@ settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      temporal: temporal
+      temporal: temporal_subjects
     sort:
       field: name
       direction: asc
