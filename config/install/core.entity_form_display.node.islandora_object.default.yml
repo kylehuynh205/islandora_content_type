@@ -31,7 +31,6 @@ dependencies:
     - field.field.node.islandora_object.field_physical_form
     - field.field.node.islandora_object.field_pid
     - field.field.node.islandora_object.field_place_published
-    - field.field.node.islandora_object.field_place_published_country
     - field.field.node.islandora_object.field_preservation_master_file
     - field.field.node.islandora_object.field_resource_type
     - field.field.node.islandora_object.field_rights
@@ -40,7 +39,6 @@ dependencies:
     - field.field.node.islandora_object.field_subjects_name
     - field.field.node.islandora_object.field_table_of_contents
     - field.field.node.islandora_object.field_temporal_subject
-    - field.field.node.islandora_object.field_view_mode
     - field.field.node.islandora_object.field_weight
     - node.type.islandora_object
   enforced:
@@ -526,5 +524,3 @@ content:
       match_limit: 10
     third_party_settings: {  }
 hidden:
-  field_place_published_country: true
-  field_view_mode: true
