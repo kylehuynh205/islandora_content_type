@@ -31,13 +31,16 @@ dependencies:
     - field.field.node.islandora_object.field_physical_form
     - field.field.node.islandora_object.field_pid
     - field.field.node.islandora_object.field_place_published
+    - field.field.node.islandora_object.field_place_published_country
     - field.field.node.islandora_object.field_preservation_master_file
     - field.field.node.islandora_object.field_resource_type
     - field.field.node.islandora_object.field_rights
+    - field.field.node.islandora_object.field_service_file
     - field.field.node.islandora_object.field_subject
     - field.field.node.islandora_object.field_subjects_name
     - field.field.node.islandora_object.field_table_of_contents
     - field.field.node.islandora_object.field_temporal_subject
+    - field.field.node.islandora_object.field_view_mode
     - field.field.node.islandora_object.field_weight
     - node.type.islandora_object
   enforced:
@@ -120,6 +123,7 @@ third_party_settings:
     group_media:
       children:
         - field_preservation_master_file
+        - field_service_file
       parent_name: group_tabs_view
       weight: 2
       format_type: tab
@@ -145,8 +149,6 @@ third_party_settings:
         classes: ''
         direction: horizontal
       label: 'Tabs View'
-_core:
-  default_config_hash: TZj2IxHyiI7nRUDO0hZueyq2QCE7tDSqfprGCEFu4Rs
 id: node.islandora_object.default
 targetEntityType: node
 bundle: islandora_object
@@ -414,6 +416,13 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  field_service_file:
+    type: media_library_widget
+    weight: 15
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+    region: content
   field_subject:
     weight: 18
     settings:
@@ -516,5 +525,6 @@ content:
       placeholder: ''
       match_limit: 10
     third_party_settings: {  }
-hidden: {  }
-
+hidden:
+  field_place_published_country: true
+  field_view_mode: true
